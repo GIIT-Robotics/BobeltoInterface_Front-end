@@ -1,47 +1,133 @@
-footer {
-  background-color: #000000;
-  height: 10vh;
-  display: flex;
+/* GENERAL */
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+/* HEADER */
 header {
-    display: flex;
+  background-color: #000000;
+  display: flex;
+  height: 10vh;
 }
 
+.header-logo {
+  height: 100%;
+}
+
+.header-logo > img{
+  height: 100%;
+}
+
+.header-titulo {
+  flex: 1;
+  text-align: center;
+  padding: 25px;
+  color: #A2E6FF;
+}
+
+/* MAIN */
 main {
   background-color: #00455a;
   padding: 15px;
   display: flex;
   justify-content: space-around;
   height: 80vh;
+  gap: 15px;
 }
 
-main > div {
+.giroscopio,
+.camara {
   background-color: #c4c4c4;
-  height: 40vh;
-  width: 40vw;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 10px 20px 10px 20px;
+}
+
+.camara {
+  flex: 2;
+  padding: 10px;
+}
+
+.camara > div {
+  background-color: #A2E6FF;
+  width: 100%;
+  height: 100%;
+}
+
+.giroscopio {
+  padding: 10px;
+  flex: 1;
   display: flex;
   flex-direction: column;
+  gap: 10px;
+}
+
+.giroscopio > div {
+  background-color: #A2E6FF;
+}
+
+.giroscopio-visual {
+  flex: 1;
+}
+
+.giroscopio-control {
+  flex: 1;
+}
+
+.giroscopio-control-titulo {
+  text-align: center;
+}
+
+.slider-master {
+  padding: 0px 15px 0px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.slider-inferior {
+  display: flex;
+  justify-content: space-around;
+  padding: 0px 15px 0px 15px; 
+  gap: 15px;
+} 
+
+.slider-inferior > div {
+  flex: 1;
+}
+
+.slider-izquierda > div, .slider-derecha > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.slider-texto {
+  display: flex;
   justify-content: space-between;
 }
 
-main > div > div {
-  height: 45%;
-  background-color: red;
+.slider-texto > input {
+  width: 40px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #000000;
+  height: 10vh;
+  display: flex;
 }
 
 footer > div {
   margin: 10px;
-  width: 145px;
-  height: 70px;
+  width: 10%;
+  height: 80%;
   background-color: #c4c4c4;
 }
 
 footer > div > button {
-  width: 145px;
-  height: 70px;
+  width: 100%;
+  height: 100%;
   background: none;
   border: none;
 }
