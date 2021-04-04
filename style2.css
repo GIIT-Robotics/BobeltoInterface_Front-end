@@ -27,20 +27,29 @@ main{
     justify-content: space-around;
 }
 
-main > div {
-    background-color: #C4C4C4;
-    height: 40vh;
-    width: 40vw;
+ .leftcol {
+    height: 70vh;
+    width: 35vw;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 10px 20px 10px 20px;
+    padding: 5px 5px 5px 5px; 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-main > div > div {
-    height: 45%;
-    background-color: red;
+.rightcol {
+    height: 70vh;
+    width: 70vw;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px 5px 5px 5px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+ main > div > div {
+    height: 48%;
+    background-color: #C4C4C4;
 }
 
 /* Header */
