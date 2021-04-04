@@ -1,0 +1,47 @@
+footer {
+    background-color: #000000;
+    height: 10vh;
+    display: flex;
+  }
+  
+  header {
+      display: flex;
+  }
+  
+  main {
+    background-color: #00455a;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    height: 80vh;
+  }
+  
+  main > div {
+    background-color: transparent;
+    height: 75vh;
+    width: 45vw;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  main > div > div {
+    height: 48%;
+    background-color: #C4C4C4;
+  }
+  
+  footer > div {
+    margin: 10px;
+    width: 145px;
+    height: 70px;
+    background-color: #c4c4c4;
+  }
+  
+  footer > div > button {
+    width: 145px;
+    height: 70px;
+    background: none;
+    border: none;
+  }
+  
