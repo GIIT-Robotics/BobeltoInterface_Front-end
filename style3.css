@@ -20,22 +20,21 @@ main > div {
   background-color: transparent;
   height: 75vh;
   width: 45vw;
-  font-family: Arial, Helvetica, sans-serif;
-  display: flex;
+  font-family: 'Courier New', Courier, monospace;
   flex-direction: column;
   justify-content: space-between;
 }
 
 main > div > div {
   height: 48%;
-  background-color: #C4C4C4;
+  background-color: #333;
 }
 
 footer > div {
   margin: 10px;
   width: 145px;
   height: 70px;
-  background-color: #c4c4c4;
+  background-color: #333;
 }
 
 footer > div > button {
