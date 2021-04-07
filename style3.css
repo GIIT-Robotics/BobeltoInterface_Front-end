@@ -21,6 +21,10 @@ main > div {
   height: 75vh;
   width: 45vw;
   font-family: 'Courier New', Courier, monospace;
+<<<<<<< HEAD
+=======
+  display: flex;
+>>>>>>> estilos
   flex-direction: column;
   justify-content: space-between;
 }
