@@ -34,12 +34,12 @@ main {
   padding: 15px;
   display: flex;
   justify-content: space-around;
-  height: 80vh;
+  height: 85vh;
 }
 
 main > div {
   background-color: transparent;
-  height: 75vh;
+  height: 85vh;
   width: 45vw;
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
