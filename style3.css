@@ -1,15 +1,22 @@
-footer {
-    background-color: #000000;
-    height: 10vh;
-    display: flex;
-  }
-  
 header {
-    display: flex;
-}
+  display: flex;
+  height: 25px;
+  background: #121212;
+  z-index: 100;
+  box-shadow: 0px 2px 50px 0px rgba(0,0,0,0.5);
   
+}
+
+header h1{
+  padding: 0 0 0 1em;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  font-size: 10px;  
+}
+
 main {
-  background-color: #00455a;
+  background: #202020;
   padding: 15px;
   display: flex;
   justify-content: space-around;
@@ -31,16 +38,22 @@ main > div > div {
   background-color: #C4C4C4;
 }
 
+footer {
+  background-color: #000000;
+  height: 10vh;
+  display: flex;
+}
+
 footer > div {
   margin: 10px;
   width: 145px;
-  height: 70px;
+  height: 7vh;
   background-color: #c4c4c4;
 }
 
 footer > div > button {
   width: 145px;
-  height: 70px;
+  height: 7vh;
   background: none;
   border: none;
 }
