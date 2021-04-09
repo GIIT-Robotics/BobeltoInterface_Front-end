@@ -1,26 +1,107 @@
-/* Footer*/
-footer{
-    background-color: #000000;
-    height: 10vh;
-    display: flex;
+
+/* =========================================== */
+/* GLOBAL VARIABLES*/
+/* =========================================== */
+:root{
+  --color_DarkBlue: #323FB5;
+  --color_DarkGray: #121212;
+  --color_bgGray: #202020;
 }
 
-footer > div {
-    margin: 1%;
-    width: 50%;
-    height: 68%;
-    background-color: #C4C4C4 ;
-}
-
-footer > div > button {
-    width: 100%; 
+/* =========================================== */
+/* HEADER */
+/* =========================================== */
+header {
+    background: var(--color_DarkGray);
     height: 100%;
-    background: none;
-    border: none;
+    display: flex; 
+  }
+  
+  header h1{
+    text-align: center;
+    color: white;  
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+    margin-left: 1em;
+  }
+
+/* =========================================== */
+/* MAIN */
+/* =========================================== */
+main {
+    background: var(--color_bgGray);
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    height: 85vh;
+  }
+
+ .leftcol {
+    height: 70vh;
+    width: 35vw;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px 5px 5px 5px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+.rightcol {
+    height: 70vh;
+    width: 70vw;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px 5px 5px 5px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+ main > div > div {
+    height: 48%;
+    background-color: #C4C4C4;
+} 
+
+
+/* =========================================== */
+/* FOOTER */
+/* =========================================== */
+footer {
+    background-color: var(--color_DarkGray);
+    height: 70px; /*70*/
+    display: flex;
+    align-items: center;
+  }
+  
+  #f-logo{
+    justify-content: flex-end;
+  }
+  
+  #f-button{
+      background-color:var(--color_DarkGray);
+      margin-left: 1em;
+      border-radius: 18px;
+      display: inline-block;
+      cursor: pointer;
+      color:#ffffff;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      padding: 12px 20px;
+      text-decoration: none;
+  }
+  
+  #f-button:hover {
+        box-shadow:inset 1px 1px 5px -1px #333;
+      background-color: var(--color_DarkBlue);
+  }
+  
+  #f-button:active {
+      position:relative;
+      top:1px;
+  }
 
 /* Main */
-main{
+/* main{
     background-color: #00455A;
     padding: 15px;
     display: flex;
@@ -50,7 +131,7 @@ main{
  main > div > div {
     height: 48%;
     background-color: #C4C4C4;
-}
+} */
 
 /* Header */
 

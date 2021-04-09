@@ -1,0 +1,166 @@
+/* =========================================== */
+/* GLOBAL VARIABLES*/
+/* =========================================== */
+:root{
+    --radar_Size: 350px;
+    --color_DarkBlue: #323FB5;
+    --color_DarkGray: #121212;
+    --color_bgGray: #202020;
+  }
+  
+  /* =========================================== */
+  /* HEADER */
+  /* =========================================== */
+  header {
+    background: var(--color_DarkGray);
+    height: 50px;
+    display: flex; 
+  }
+  
+  header h1{
+    text-align: center;
+    color: white;  
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+    margin-left: 1em;
+  }
+  
+  /* =========================================== */
+  /* MAIN */
+  /* =========================================== */
+  main {
+    background: var(--color_bgGray);
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    height: 85vh;
+  }
+  
+  main > div {
+    background-color: transparent;
+    height: 85vh;
+    width: 45vw;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  #segmento {
+    height: 48%;
+    background-color: #C4C4C4;
+  }
+  
+  /* =========================================== */
+  /* FOOTER */
+  /* =========================================== */
+  footer {
+    background-color: var(--color_DarkGray);
+    height: 70px; /*70*/
+    display: flex;
+    align-items: center;
+  }
+  
+  #f-logo{
+    justify-content: flex-end;
+  }
+  
+  #f-button{
+      background-color:var(--color_DarkGray);
+    margin-left: 1em;
+      border-radius: 18px;
+      display: inline-block;
+      cursor: pointer;
+      color:#ffffff;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      padding: 12px 20px;
+      text-decoration: none;
+  }
+  
+  #f-button:hover {
+    box-shadow:inset 1px 1px 5px -1px #333;
+      background-color: var(--color_DarkBlue);
+  }
+  
+  #f-button:active {
+      position:relative;
+      top:1px;
+  }
+  
+  /* =========================================== */
+  /* RADAR */
+  /* =========================================== */
+  .radar {
+    width: var(--radar_Size);
+    height: var(--radar_Size);
+    position: relative;
+    background-size: var(--radar_Size) var(--radar_Size);
+  }
+  
+  .radar .pointer{
+    position: absolute;
+    z-index: 1024;
+    left: 10.5820106%;
+    right: 10.5820106%;
+    top: 10.5820106%;
+    bottom: 50%;
+    will-change: transform;
+    transform-origin: 50% 100%;
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+    background-image: linear-gradient(135deg, 
+      rgba(5, 162, 185, 0.8) 0%, 
+      rgba(0, 0, 0, 0.02) 70%,
+      rgba(0, 0, 0, 0) 100%
+      );
+    clip-path: polygon(100% 0, 
+      100% 10%,
+      50% 100%, 0 100%, 0 0);
+    
+    animation: rotate360 3s infinite linear;
+  }
+  
+  .radar .pointer:after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    bottom: -1px;
+    border-top: 2px solid rgba(0, 231, 244, 0.8);
+    box-shadow: 0 0 3px rgba(0, 231, 244, 0.6);
+    border-radius: 9px;
+  }
+  
+  .shadow {
+    position: absolute;
+    left: 11%;
+    top: 11%;
+    right: 11%;
+    bottom: 11%;
+    margin: auto;
+    border-radius: 9999px;
+    box-shadow: 0 0 66px 6px #323FB5;
+    animation: shadow 1s infinite ease;
+  }
+  
+  
+  @keyframes rotate360 {
+    0% {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes shadow {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
