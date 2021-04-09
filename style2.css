@@ -14,17 +14,17 @@
 header {
     background: var(--color_DarkGray);
     height: 100%;
-    display: flex; 
+    display: flex;
   }
   
-  header h1{
+header>h1{
     text-align: center;
     color: white;  
     font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
     font-size: 20px;
     margin-left: 1em;
-  }
+}
 
 /* =========================================== */
 /* MAIN */
@@ -37,27 +37,27 @@ main {
     height: 85vh;
   }
 
- .leftcol {
-    height: 70vh;
-    width: 35vw;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 5px 5px 5px 5px; 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
 .rightcol {
-    height: 70vh;
-    width: 70vw;
+    background-color: transparent;
+    height: 85vh;
+    width: 65vw;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 5px 5px 5px 5px; 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
- main > div > div {
+.leftcol {
+    background-color: transparent;
+    height: 85vh;
+    width: 30vw;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main > div > div {
     height: 48%;
     background-color: #C4C4C4;
 } 
@@ -73,11 +73,11 @@ footer {
     align-items: center;
   }
   
-  #f-logo{
+#f-logo{
     justify-content: flex-end;
-  }
+}
   
-  #f-button{
+#f-button{
       background-color:var(--color_DarkGray);
       margin-left: 1em;
       border-radius: 18px;
@@ -88,51 +88,14 @@ footer {
       font-size: 18px;
       padding: 12px 20px;
       text-decoration: none;
-  }
+}
   
-  #f-button:hover {
+#f-button:hover {
         box-shadow:inset 1px 1px 5px -1px #333;
       background-color: var(--color_DarkBlue);
-  }
+}
   
-  #f-button:active {
+#f-button:active {
       position:relative;
       top:1px;
-  }
-
-/* Main */
-/* main{
-    background-color: #00455A;
-    padding: 15px;
-    display: flex;
-    justify-content: space-around;
 }
-
- .leftcol {
-    height: 70vh;
-    width: 35vw;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 5px 5px 5px 5px; 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.rightcol {
-    height: 70vh;
-    width: 70vw;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 5px 5px 5px 5px; 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
- main > div > div {
-    height: 48%;
-    background-color: #C4C4C4;
-} */
-
-/* Header */
-
-
