@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>HMI Bobelto</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    
+    <header>
+        <div class="titulo"> 
+            <h1>BOBELTO HMI</h1>
+        </div>
+        <ul>
+            <h4>Sensor</h4>
+            <div class="sensores">
+                <div class="valores2">
+                    <li>Opción 1:</li>
+                    <div class="numero">
+                        000000
+                    </div>
+                </div>
+
+                <div class="valores2">
+                    <li>Opción 2:</li>
+                    <div class="numero">
+                        000000
+                    </div>
+                </div>
+
+                <div class="valores2">
+                    <li>Opción 3:</li>
+                    <div class="numero">
+                        000000
+                    </div>
+                </div>
+            </div>
+        </ul>
+    </header>
+
+    <div class="main">
+        <div class="Left">
+            <h4>Radar</h4>
+            <div class="imagen">
+                <img src="radar.png" width="200"/>
+            </div>
+            <div class="lista_coord">
+                <div class="coordenada1">
+                    <h5>30</h5>
+                </div>
+                <div class="coordenada2">
+                    <h5>25</h5>
+                </div>
+            </div>
+            <h4>Valores</h4>
+            <div class="Lista">
+                <div class="valores">
+                    <li>Valor 1:</li>
+                    <div class="numero">
+                        000000
+                    </div>
+                </div>
+
+                <div class="valores">
+                    <li>Valor 2:</li>
+                    <div class="numero">
+                        000000
+                    </div>
+                </div>
+
+                <div class="valores">
+                    <li>Valor 3:</li>
+                    <div class="numero">
+                        000000
+                    </div>
+                </div>
+
+                <div class="valores">
+                    <li>Valor 4:</li>
+                    <div class="numero">
+                        000000
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    
+        <div class="Middle">
+            <h4>Cámara</h4>
+        </div>
+    
+        <div class="Rigth">
+            <h4>Posición</h4>
+            <div class="viñetas">
+                <div class="valores2">
+                    <li>X:</li>
+                    <div class="numero">
+                        000000
+                    </div>
+                </div>
+
+                <div class="valores2">
+                    <li>Y:</li>
+                    <div class="numero">
+                        000000
+                    </div>
+                </div>
+
+                <div class="valores2">
+                    <li>Z:</li>
+                    <div class="numero">
+                        000000
+                    </div>
+                </div>
+            </div>
+            <h4>Velocidades</h4>
+            <div class="slider-master">
+                <div class="slider-texto">
+                    <label for="rango-master">Valor 1</label>
+                    <input type="text" name="rango-master-texto" value="120" class="rango-master-texto"
+                        id="rango-master-texto" onchange="updateTextInput(this.value, 'rango-master');">
+                </div>
+                <input type="range" min="1" max="100" value="50" class="rango-master" id="rango-master"
+                    onchange="updateTextInput(this.value, 'rango-master-texto');">
+            </div>
+
+            <div class="slider-master2">
+                <div class="slider-texto">
+                    <label for="rango-master">Valor 2</label>
+                    <input type="text" name="rango-master-texto" value="120" class="rango-master-texto"
+                        id="rango-master-texto" onchange="updateTextInput(this.value, 'rango-master');">
+                </div>
+                <input type="range" min="1" max="100" value="50" class="rango-master" id="rango-master"
+                    onchange="updateTextInput(this.value, 'rango-master-texto');">
+            </div>
+
+            <div class="slider-master3">
+                <div class="slider-texto">
+                    <label for="rango-master">Valor 3</label>
+                    <input type="text" name="rango-master-texto" value="120" class="rango-master-texto"
+                        id="rango-master-texto" onchange="updateTextInput(this.value, 'rango-master');">
+                </div>
+                <input type="range" min="1" max="100" value="50" class="rango-master" id="rango-master"
+                    onchange="updateTextInput(this.value, 'rango-master-texto');">
+            </div>
+        </div>
+    </div>
+
+
+    
+    <footer>
+        <div class="camara-button">
+            <button>
+                CÁMARA
+            </button>
+        </div>
+        <div class="sensores-button">
+            <button>
+                SENSORES
+            </button>
+        </div>
+        <div class="orientación">
+            <button>
+                ORIENTACIÓN
+            </button>
+        </div>
+        <div class="brazo_mecanico">
+            <button>
+                BRAZO MECÁNICO
+            </button>
+        </div>
+        <div class="general">
+            <button>
+                GENERAL
+            </button>
+        </div>
+        <div class="image">
+            <img src="giit.png" />
+        </div>
+    </footer>
+
+</body>
+</html>
