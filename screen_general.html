@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    
     <header>
         <div class="titulo"> 
             <h1>BOBELTO HMI</h1>
@@ -40,11 +39,11 @@
         </ul>
     </header>
 
-    <div class="main">
+    <main>
         <div class="Left">
             <h4>Radar</h4>
             <div class="imagen">
-                <img src="img/radar.png" width="200"/>
+                <img src="img/radar.png" width="150"/>
             </div>
             <div class="lista_coord">
                 <div class="coordenada1">
@@ -102,14 +101,14 @@
                 </div>
 
                 <div class="valores2">
-                    <li>Y:</li>
+                    <li>X:</li>
                     <div class="numero">
                         000000
                     </div>
                 </div>
 
                 <div class="valores2">
-                    <li>Z:</li>
+                    <li>X:</li>
                     <div class="numero">
                         000000
                     </div>
@@ -148,40 +147,22 @@
                     onchange="updateTextInput(this.value, 'rango-master-texto');">
             </div>
         </div>
-    </div>
+    </main>
 
-
-    
     <footer>
-        <div class="camara-button">
-            <button>
-                CÁMARA
-            </button>
+        <div class="button1">
+            <a href="#" class="button">Cámara</a>
+            <a href="#" class="button">Sensores</a>
+            <a href="#" class="button">Orientación</a>
+            <a href="#" class="button">Brazo robótico</a>
+            <a href="#" class="button">General</a>
         </div>
-        <div class="sensores-button">
-            <button>
-                SENSORES
-            </button>
-        </div>
-        <div class="orientación">
-            <button>
-                ORIENTACIÓN
-            </button>
-        </div>
-        <div class="brazo_mecanico">
-            <button>
-                BRAZO MECÁNICO
-            </button>
-        </div>
-        <div class="general">
-            <button>
-                GENERAL
-            </button>
-        </div>
-        <div class="image">
-            <img src="img/giit.png" />
+
+        <div id="f-logo" class="image">
+            <img src="img/giit.png">
         </div>
     </footer>
+
 </body>
 <script src="./logica.js"></script>
 </html>

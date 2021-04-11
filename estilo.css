@@ -1,96 +1,109 @@
-*{
-    padding: 0;
-    margin: 0;
-    /*border: solid 1px black;*/
+  
+/* =========================================== */
+/* GLOBAL VARIABLES*/
+/* =========================================== */
+:root {
+    --radar_Size: 350px;
+    --color_DarkBlue: #323FB5;
+    --color_DarkGray: #121212;
+    --color_bgGray: #202020;
 }
 
-body{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+/* =========================================== */
+/* GENERAL*/
+/* =========================================== */
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
-    height: 100vh;
+
 }
 
+/* =========================================== */
+/* HEADER */
+/* =========================================== */
 header{
-    height: 26%;
-    padding: 0.7%;
+    height: 21vh;
+    padding-right: 0.5%;
+    padding-left: 0.5%;
     display: flex;
     background-color: black;
 }
 
 .titulo{
-    width: 107%;
-    height: 100%;
+    width: 100%;
+    margin: 0.5% 0% 0.5% 0%;
     background-color: #696969;
     color: white;
     text-align: center;
-    line-height: 750%;
-    margin-right: 0.7%;
+    line-height: 600%;
     border: solid 1px #696969;
-    margin-bottom: 20%;
 }
 
 ul{
     width: 25%;
-    height: 100%;
-    color: white;
     background-color:black;
-    text-align: left;
-    padding-left: 0.8%;
-    padding-right: 0.3%;
-    margin-right:0px;
+    margin: 0.5% 0% 0.5% 0.5%;
     border: solid 1px #696969;
 }
 
 ul h4{
     background-color:#696969;
+    color: white;
     height: 25%;
-    margin-top: 2.5%;
-    margin-bottom: 1%;
+    margin: 3% 4% 1% 4%;
     text-align: center;
-    line-height: 150%;
-    font-size: 24px;
+    line-height: 120%;
+    font-size: 20px;
 }
 
 .sensores{
     list-style-type: circle;
     font-size: 15px;
-    margin-left: 10%;
-    margin-top: 0%;
-    padding-top: 0%;
-    line-height: 225%;
-    margin-bottom: 2%;
-}
-
-.main{
-    display: flex;
-    height: 92%;
+    margin: 2% 2% 1% 2%;
+    height: 60%;
+    line-height: 90%;
     background-color: black;
 }
 
-.sensores > .valores2{
+.sensores>.valores2 {
     display: inline-flex;
+    margin: 1% 0% 0% 12%;
+    color: white;
 }
 
-header > ul > .sensores > .valores2 > .numero{ 
+header>ul>.sensores>.valores2>.numero {
     color: yellow;
     background-color: #696969;
-    height: 10%;
-    line-height: 150%;
-    margin-left: 2vh;
-    width: 20vh;
-    margin-top: 3.5%;
+    line-height: 100%;
+    margin: 1% -15% 1% 10%;
+    width: 8vw;
     text-align: center;
 }
 
-.Left{
+/* =========================================== */
+/* MAIN */
+/* =========================================== */
+main {
+    display: flex;
+    height: 66vh;
+    background-color: black;
+}
+
+/* =========================================== */
+/* LEFT */
+/* =========================================== */
+.Left {
     text-align: center;
-    height:87.2vh;
     width: 25%;
-    padding: 0.8%;
-    margin-right: 0.5%;
-    margin-top: 0.35%;
-    margin-left: 0.6%;
-    margin-bottom: 1%;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    margin: 0% 0.5% 0% 0.5%;
     background-color: black;
     border: solid 1px #696969;
     color: white;
@@ -98,173 +111,118 @@ header > ul > .sensores > .valores2 > .numero{
 }
 
 .Left > h4{
-    font-size: 24px;
-    margin-top: 3%;
-    color: white;
+    font-size: 20px;
+    margin:2% 4% 0% 4%;
     background-color: #696969;
-    padding-top: 5%;
-    height: 8%;
-}
-
-.Left > .Lista{
-    margin-top: 3%;
-    margin-bottom: 5%;
-    margin-left: 5%;
-    margin-right: 2%;
-    padding-left: 0%;;
-}
-
-.Left > .Lista > .valores{
-    width: 90%;
-    margin-left: 1%;
-    margin-right: 4%;
-    margin-top: 0%;
-    margin-bottom: 0%;
-    background-color: black;
-    display: inline-flex;
-}
-
-.main > .Left > .Lista > .valores > .numero{
-    color:yellow;
-    background-color: #696969;
-    width: 50%;
-    line-height: 130%;
-    margin-left: 2%;
-    margin-top: 2.5%;
-    margin-bottom: 2.5%;
-    padding-top: 0%;
-    font-size: 18px;
-}
-
-.Rigth> .viñetas > .valores2{
-    display: inline-flex;
-    list-style-type: none;
-}
-
-.Rigth> .viñetas > .valores2 > .numero{ 
-    color: yellow;
-    background-color:#696969;
-    height: 25px;
-    margin-top: 8px;
-    line-height: 25px;
-    margin-left: 10px;
-    width: 170px;
+    line-height: 180%;
 }
 
 .imagen{
-    margin-top: 5%;
-    margin-bottom: 5%;
-    padding-bottom: -0.5%;
+    margin-top: 3%;
 }
 
 .lista_coord{
     color: yellow;
-    margin-top: 0%;
-    margin-bottom: 0%;
     background-color:black;
-    height: 1%;
-    line-height: 1.5%;
     display: inline-flex;
+    font-size: 25px;
+
 }
 .coordenada1{
     text-align: left;
     background-color: black;
-    font-size: 30px;
     margin-right: 30vh;
 }
 
 .coordenada2{
     background-color:black;
     text-align: right;
-    font-size: 30px;
 }
 
+.Left > .Lista{
+    margin: 3% 2% 5% 2%;
+    padding-left: 0%;
+}
+
+.Left > .Lista > .valores{
+    width: 90%;
+    display: inline-flex;
+}
+
+.Left > .Lista > .valores > .numero{
+    color:yellow;
+    background-color: #696969;
+    width: 50%;
+    line-height: 130%;
+    margin: 2% 0% 0% 2%;
+    padding-top: 0%;
+    font-size: 18px;
+}
+/* =========================================== */
+/* MIDDLE */
+/* =========================================== */
 .Middle{
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    margin: 0% 0.5% 0% 0%;
     text-align: center;
-    height:87.5vh;
-    width: 80%;
+    width: 84%;
     background-color: black;
-    padding: 0.7%;
-    margin-right: 0%;
-    margin-top: 0.4%;
-    margin-bottom: 1%;
     border: solid 1px #696969;
+    color: white;
 }
 
 .Middle > h4{
-    font-size: 24px;
-    margin-top: 1.5%;
-    color: white;
+    font-size: 20px;
+    margin:1% 4% 0% 4%;
     background-color: #696969;
-    padding-top: 1.5%;
-    height: 8%;
+    line-height: 180%;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
 }
 
+/* =========================================== */
+/* RIGHT */
+/* =========================================== */
 .Rigth{
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    margin: 0% 0.5% 0% 0%;
     text-align: center;
-    height:87.2vh;
-    width: 25%;
+    width: 27.2%;
     background-color: black;
-    padding-top: 1.5%;
-    padding-left: 1%;
-    padding-right: 1%;
-    padding-bottom: 0%;
-    margin-left: 0.5%;
-    margin-right: 0.5%;
-    margin-top: 0.4%;
-    margin-bottom: 0.4%;
     border: solid 1px #696969;
-    font-size: 20px;
     color: white;
-    line-height: 180%;
+    
 }
 
 .Rigth > h4{
-    margin-top: 1.5%;
-    font-size: 24px;
-    padding-top: 3%;
-    height: 8%;
-    color: white;
+    font-size: 20px;
+    margin:4% 4% 3% 4%;
     background-color: #696969;
+    line-height: 180%;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
 }
 
 .Rigth > .viñetas{
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 2%;
+    margin-bottom: 1%;
 }
 
-footer {
-    background-color:black;
-    height: 20vh;
-    display: flex;
-    justify-content: left;
-    
-}
-  
-footer > div {
-    margin: 1.5%;
-    width: 11%;
-    height: 60%;
-    background-color:black;
-    
-    
-}
-  
-footer > div > button {
-    width: 100%;
-    height:100%;
-    background: none;
-    border: none;
-    color: white;
+.Rigth>.viñetas>.valores2 {
+    display: inline-flex;
+    list-style-type: none;
+    margin: 1% 0% 0% 15%;
+
 }
 
-footer > div > button:hover{
-    background-color:blue;
-}
-
-.image{
-    justify-content:right;
-    padding-left: 10%;
+.Rigth>.viñetas>.valores2>.numero {
+    color: yellow;
+    background-color: #696969;
+    line-height: 100%;
+    margin: 1% 5% 1% 4%;
+    width: 10vw;
 }
 
 .slider-master {
@@ -288,6 +246,55 @@ footer > div > button:hover{
     justify-content: center;
 }
 
-  
-  
- 
+/* =========================================== */
+/* FOOTER */
+/* =========================================== */
+
+footer {
+    background-color: black;
+    height: 13vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    width: 10%;
+    height: 80%;
+    background-color: black;
+}
+
+#f-logo {
+    justify-content: flex-end;
+    padding-left: 10%;
+}
+
+.image img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.button {
+    background-color: var(--color_DarkGray);
+    margin-left: 1em;
+    border-radius: 18px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 22px;
+    padding: 12px 20px;
+    text-decoration: none;
+}
+
+.button:hover {
+    box-shadow: inset 1px 1px 5px -1px #333;
+    background-color: var(--color_DarkBlue);
+}
+
+.button:active {
+    position: relative;
+    /* top: 1px; */
+}
+
+
