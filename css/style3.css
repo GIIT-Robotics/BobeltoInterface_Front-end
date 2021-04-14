@@ -59,38 +59,67 @@ main > div {
 /* =========================================== */
 /* FOOTER */
 /* =========================================== */
-footer {
+footer{
   background-color: var(--color_DarkGray);
-  height: 70px; /*70*/
+  height: 8vh;
   display: flex;
   align-items: center;
 }
 
-#f-logo{
-  justify-content: flex-end;
+/* ------------------------------------------- */
+.f-nombre{
+  width: 25vw;
+  text-align: center;
 }
 
-#f-button{
-	background-color:var(--color_DarkGray);
+.f-nombre h1{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+}
+
+/* ------------------------------------------- */
+.f-button{
+  width: 50vw;
+}
+
+.button{
+  background-color: var(--color_DarkGray);
   margin-left: 1em;
-	border-radius: 18px;
-	display: inline-block;
-	cursor: pointer;
-	color:#ffffff;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 18px;
-	padding: 12px 20px;
-	text-decoration: none;
+  border-radius: 18px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  padding: 12px 20px;
+  text-decoration: none;
 }
 
-#f-button:hover {
-  box-shadow:inset 1px 1px 5px -1px #333;
-	background-color: var(--color_DarkBlue);
+.button:hover {
+  box-shadow: inset 1px 1px 5px -1px #333;
+  background-color: var(--color_DarkBlue);
 }
 
-#f-button:active {
-	position:relative;
-	top:1px;
+.button:active {
+  position: relative;
+  /* top: 1px; */
+}
+
+/* ------------------------------------------- */
+.logo {
+  height: 90%;
+  width: 25vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color_DarkGray);
+}
+
+.logo img {
+  max-width: 80%;
+  max-height: 80%;
 }
 
 /* =========================================== */
