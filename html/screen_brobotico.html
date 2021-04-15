@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>HMI Bobelto</title>
+    <link rel="stylesheet" href="../css/estilo_brobotico.css">
+</head>
+
+<body>
+    <header>
+        <div class="titulo"> 
+            <h1>BRAZO ROBÓTICO</h1>
+        </div>
+
+        <!-- -------------------------- -->
+        <!-- ESTADO DE BOBELTO -->
+        <!-- -------------------------- -->
+        <ul>
+            <h4>Estado</h4>
+            <div class="sensores">
+                <div class="valores2">
+                    Opción 1:
+                    <div id="chelo" class="numero">
+                        000000
+                    </div>
+                </div>
+
+                <div class="valores2">
+                    Opción 2:
+                    <div class="numero">
+                        000000
+                    </div>
+                </div>
+
+                <div class="valores2">
+                    Opción 3:
+                    <div class="numero">
+                        000000
+                    </div>
+                </div>
+            </div>
+        </ul>
+    </header>
+
+    <main>
+
+        <!-- -------------------------- -->
+        <!-- BRAZO IZQUIERDO-->
+        <!-- -------------------------- -->
+        <div class="Left">
+
+            <h4>Izquierdo</h4>
+                <div class="imagen">
+                    <img src="../img/brazo_izquierdo.png" width="250"/>
+                </div>
+                <div class="lista_coord">
+                    <div class="coordenada_horizontal">
+                        <h5>0</h5>
+                    </div>
+                    <div class="coordenada_vertical">
+                        <h5>0</h5>
+                    </div>
+                </div>
+
+            <h4>Brazo</h4>
+                <div class="Lista">
+                    <div class="valores">
+                        Valor 1:
+                        <div class="numero">
+                            000000
+                        </div>
+                    </div>
+
+                    <div class="valores">
+                        Valor 2:
+                        <div class="numero">
+                            000000
+                        </div>
+                    </div>
+
+                    <div class="valores">
+                        Valor 3:
+                        <div class="numero">
+                            000000
+                        </div>
+                    </div>
+                </div>
+            <h4>Gripper</h4>
+                <div class="slider-master">
+                    <div class="slider-texto">
+                        <label for="rango-master">Presión</label>
+                        <input type="text" name="rango-master-texto" value="120" class="rango-master-texto"
+                            id="rango-master-texto" onchange="updateTextInput(this.value, 'rango-master');">
+                    </div>
+                    <input type="range" min="1" max="100" value="50" class="rango-master" id="rango-master"
+                        onchange="updateTextInput(this.value, 'rango-master-texto');">
+                </div>  
+        </div>
+
+        
+        <!-- -------------------------- -->
+        <!-- CAMARA -->
+        <!-- -------------------------- -->
+        </div>
+    
+        <div class="Middle">
+            <h4>Cámara</h4>
+        </div>
+
+
+        <!-- -------------------------- -->
+        <!-- BRAZO DERECHO -->
+        <!-- -------------------------- -->
+        <div class="Right">            
+            <h4>Derecho</h4>
+                <div class="imagen">
+                    <img src="../img/brazo_derecho.png" width="250"/>
+                </div>
+                <div class="lista_coord">
+                    <div class="coordenada_horizontal">
+                        <h5>0</h5>
+                    </div>
+                    <div class="coordenada_vertical">
+                        <h5>0</h5>
+                    </div>
+                </div>
+
+            <h4>Brazo</h4>
+                <div class="Lista">
+                    <div class="valores">
+                        Valor 1:
+                        <div class="numero">
+                            000000
+                        </div>
+                    </div>
+
+                    <div class="valores">
+                        Valor 2:
+                        <div class="numero">
+                            000000
+                        </div>
+                    </div>
+
+                    <div class="valores">
+                        Valor 3:
+                        <div class="numero">
+                            000000
+                        </div>
+                    </div>
+                </div>
+            <h4>Gripper</h4>
+                <div class="slider-master">
+                    <div class="slider-texto">
+                        <label for="rango-master">Presión</label>
+                        <input type="text" name="rango-master-texto" value="120" class="rango-master-texto"
+                            id="rango-master-texto" onchange="updateTextInput(this.value, 'rango-master');">
+                    </div>
+                    <input type="range" min="1" max="100" value="50" class="rango-master" id="rango-master"
+                        onchange="updateTextInput(this.value, 'rango-master-texto');">
+                </div> 
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="f-nombre">
+            <h1>BOBELTO HMI</h1>
+        </div>
+
+        <div class="f-button">
+            <a href="screen_general.html" class="button">General</a>
+            <a href="screen_camara.html" class="button">Cámara</a>
+            <a href="screen_sensores.html" class="button">Sensores</a>
+            <a href="screen_orientacion.html" class="button">Orientación</a>
+            <a href="screen_brobotico.html" class="button">Brazo robótico</a>
+        </div>
+
+        <div class="logo">
+            <img src="../img/logo_giit.png">
+        </div>
+    </footer>
+
+</body>
+
+<script src="../js/logica4.js"></script>
+
+</html>

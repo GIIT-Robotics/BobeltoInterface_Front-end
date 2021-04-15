@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilo_camara.css">
+    <title>Screen Giuffra</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-logo">
+            <img src="./LogoGIIT.png" alt="">
+        </div>
+        <div class="header-titulo">
+            <h1>HMI Bobelto - GIIT ROBOTICS</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="camara">
+            <div>
+                <h3>Cámara</h3>
+            </div>
+        </div>
+        <div class="giroscopio">
+            <div class="giroscopio-visual">
+                <h3>
+                    Visual de giroscopio
+                </h3>
+            </div>
+            <div class="giroscopio-control">
+                <div class="giroscopio-control-titulo">
+                    <h3>
+                        Control de giroscopio
+                    </h3>
+                </div>
+                <div class="slider-master">
+                    <div class="slider-texto">
+                        <label for="rango-master">Master</label>
+                        <input type="text" name="rango-master-texto" value="50" class="rango-master-texto"
+                            id="rango-master-texto" onchange="updateTextInput(this.value, 'rango-master');">
+                    </div>
+                    <input type="range" min="1" max="100" value="50" class="rango-master" id="rango-master"
+                        onchange="updateTextInput(this.value, 'rango-master-texto');">
+                </div>
+                <div class="slider-inferior">
+                    <div class="slider-izquierda">
+                        <div class="slider-x">
+                            <div class="slider-texto">
+                                <label for="rango-x">Force X</label>
+                                <input type="text" name="rango-x-texto" class="rango-x-texto" value="50"
+                                    id="rango-x-texto" onchange="updateTextInput(this.value, 'rango-x');">
+                            </div>
+                            <input type="range" min="1" max="100" value="50" class="rango-x" id="rango-x"
+                                onchange="updateTextInput(this.value, 'rango-x-texto');">
+                        </div>
+                        <div class="slider-y">
+                            <div class="slider-texto">
+                                <label for="rango-y">Force Y</label>
+                                <input type="text" name="rango-y-texto" class="rango-y-texto" value="50"
+                                    id="rango-y-texto" onchange="updateTextInput(this.value, 'rango-y');">
+                            </div>
+                            <input type="range" min="1" max="100" value="50" class="rango-y" id="rango-y"
+                                onchange="updateTextInput(this.value, 'rango-y-texto');">
+                        </div>
+                        <div class="slider-z">
+                            <div class="slider-texto">
+                                <label for="rango-z">Force Z</label>
+                                <input type="text" name="rango-z-texto" value="50" class="rango-z-texto"
+                                    id="rango-z-texto" onchange="updateTextInput(this.value, 'rango-z');">
+                            </div>
+                            <input type="range" min="1" max="100" value="50" class="rango-z" id="rango-z"
+                                onchange="updateTextInput(this.value, 'rango-z-texto');">
+                        </div>
+                    </div>
+                    <div class="slider-derecha">
+                        <div class="slider-pitch">
+                            <div class="slider-texto">
+                                <label for="rango-pitch">Force pitch</label>
+                                <input type="text" name="rango-pitch-texto" value="50" class="rango-pitch-texto"
+                                    id="rango-pitch-texto" onchange="updateTextInput(this.value, 'rango-pitch');">
+                            </div>
+                            <input type="range" min="1" max="100" value="50" class="rango-pitch" id="rango-pitch"
+                                onchange="updateTextInput(this.value, 'rango-pitch-texto');">
+                        </div>
+                        <div class="slider-roll">
+                            <div class="slider-texto">
+                                <label for="rango-roll">Force roll</label>
+                                <input type="text" name="rango-roll-texto" value="50" class="rango-roll-texto"
+                                    id="rango-roll-texto" onchange="updateTextInput(this.value, 'rango-roll');">
+                            </div>
+                            <input type="range" min="1" max="100" value="50" class="rango-roll" id="rango-roll"
+                                onchange="updateTextInput(this.value, 'rango-roll-texto');">
+                        </div>
+                        <div class="slider-yaw">
+                            <div class="slider-texto">
+                                <label for="rango-yaw">Force yaw</label>
+                                <input type="text" name="rango-yaw-texto" value="50" class="rango-yaw-texto"
+                                    id="rango-yaw-texto" onchange="updateTextInput(this.value, 'rango-yaw');">
+                            </div>
+                            <input type="range" min="1" max="100" value="50" class="rango-yaw" id="rango-yaw"
+                                onchange="updateTextInput(this.value, 'rango-yaw-texto');">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="f-nombre">
+            <h1>BOBELTO HMI</h1>
+        </div>
+
+        <div class="f-button">
+            <a href="screen_general.html" class="button">General</a>
+            <a href="screen_camara.html" class="button">Cámara</a>
+            <a href="screen_sensores.html" class="button">Sensores</a>
+            <a href="screen_orientacion.html" class="button">Orientación</a>
+            <a href="screen_brobotico.html" class="button">Brazo robótico</a>
+        </div>
+
+        <div class="logo">
+            <img src="img/logo_giit.png">
+        </div>
+    </footer>
+
+</body>
+
+<script src="./logic1.js"></script>
+
+</html>

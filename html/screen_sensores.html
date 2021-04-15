@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilo_sensores.css">
+    <title>Screen 2</title>
+</head>
+
+<body>
+
+    <header>
+        <h1> HMI Bobelto - Sensores </h1>
+    </header>
+
+    <main>
+        <div class="leftcol">
+            <div>
+                <p> Cámara </p>
+                <video controls loop autoplay muted width="98%" height="92%">
+                    <source src="video/camera_video.mp4" />
+                </video>
+            </div>
+            
+            <div>
+                Reporte de motores
+                <ul id = unorder>
+                    <li>
+                        Motor 1
+                        <div class="progress-bar" style="width: 75%;"> 75% </div>
+                    </li>
+                    <li>
+                        Motor 2
+                        <div class="progress-bar" style="width: 55%;"> 55% </div>
+                    </li>
+                    <li> 
+                        Motor 3 
+                        <div class="progress-bar" style="width: 38%;"> 38% </div>
+                    </li>
+                    <li> 
+                        Motor 4 
+                        <div class="progress-bar" style="width: 85%;"> 85% </div>
+                    </li>
+                    <li> 
+                        Motor 5 
+                        <div class="progress-bar" style="width: 45%;"> 45% </div>
+                    </li>
+                    <li>
+                        Motor 6
+                        <div class="progress-bar" style="width: 95%;"> 95% </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class= "rightcol">
+            <div> Pantalla superior derecha </div>
+            <div> Pantalla inferior derecha </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="f-nombre">
+            <h1>BOBELTO HMI</h1>
+        </div>
+
+        <div class="f-button">
+            <a href="screen_general.html" class="button">General</a>
+            <a href="screen_camara.html" class="button">Cámara</a>
+            <a href="screen_sensores.html" class="button">Sensores</a>
+            <a href="screen_orientacion.html" class="button">Orientación</a>
+            <a href="screen_brobotico.html" class="button">Brazo robótico</a>
+        </div>
+
+        <div class="logo">
+            <img src="img/logo_giit.png">
+        </div>
+    </footer>
+
+</body>
+
+</html>
