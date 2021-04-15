@@ -12,17 +12,17 @@
 /* HEADER */
 /* =========================================== */
 *{
-    margin: 0;
+    margin: 0%;
+    padding: 0%;
 }
 
 header {
     background: var(--color_DarkGray);
-    height: 4vh;
+    height: 6vh;
   }
 
 header > h1{
     text-align: center;
-    height: 4vh;
     color: white;  
     font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
@@ -36,10 +36,9 @@ header > h1{
 /* =========================================== */
 main {
     background: var(--color_bgGray);
-    padding: 15px;
     display: flex;
     justify-content: space-around;
-    height: 85vh;
+    height: 86vh;
   }
 
 .rightcol {
@@ -80,8 +79,7 @@ main > div > div {
 }
 
 #unorder > li {
-  padding-top: 15px;
-  padding-bottom: 12px;
+  padding-top: 1.7%;
   font-weight: bold;
 
 }

@@ -17,7 +17,7 @@
 
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 /* =========================================== */
@@ -92,7 +92,7 @@ main {
 }
 /* =========================================== */
 .imagen{
-  margin: 2%;
+  margin-top: 3%;
   height: auto;
   width: auto;
   max-width: 50%;
@@ -126,10 +126,13 @@ main {
 .Right {
   text-align: center;
   width: 25%;
-  padding: 0.3%;
-  margin-right: 0.5%;
+  padding-left: 0.5%;
+  padding-right: 0.5%;
+  margin: 0% 0.5% 0% 0.5%;
+  background-color: black;
   border: solid 1px #696969;
   color: white;
+  line-height: 140%;
 }
 /* =========================================== */
 /* LEFT */
@@ -137,44 +140,53 @@ main {
 
 /* =========================================== */
 .Left > h4{
-  background-color:#696969;
-  font-size: 22px;
-}
-
-.Left > .Lista{
-  line-height: 200%;
-}
-
-.Left > .Lista > .valores{
-  margin:1%;
-  width: 200%;
-  display:flex;
-}
-
-.Left > .Lista > .valores > .numero{
-  color:white;
+  font-size: 20px;
+  margin:2% 4% 0% 4%;
   background-color: #696969;
+  line-height: 180%;
+}
 
-  width: 39.51%;
-  margin-left: 1vh;
-  text-align: center;
+.Left>.Lista {
+  margin: 3% 2% 5% 2%;
+  padding-left: 0%;
+}
+
+.Left>.Lista>.valores {
+  width: 90%;
+  display: inline-flex;
+}
+
+.Left>.Lista>.valores>.numero {
+  color: yellow;
+  background-color: #696969;
+  width: 50%;
+  line-height: 130%;
+  margin: 2% 0% 0% 2%;
+  padding-top: 0%;
+  font-size: 18px;
 }
 
 /* =========================================== */
 /* MIDDLE */
 /* =========================================== */
-.Middle{
+.Middle {
+  padding-left: 0.5%;
+  padding-right: 0.5%;
+  margin: 0% 0% 0% 0%;
   text-align: center;
   width: 50%;
-  padding: 0.3%;
-  margin-right: 0.5%;
+  background-color: black;
   border: solid 1px #696969;
   color: white;
 }
 
-.Middle > h4{
-  background-color:#696969;
-  font-size: 22px;
+.Middle>h4 {
+  font-size: 20px;
+  margin: 1% 4% 0% 4%;
+  background-color: #696969;
+  line-height: 180%;
+  padding-left: 0.5%;
+  padding-right: 0.5%;
 }
 
 /* =========================================== */
@@ -182,28 +194,32 @@ main {
 /* =========================================== */
 
 .Right > h4{
-  background-color:#696969;
-  font-size: 22px;
+  font-size: 20px;
+  margin:4% 4% 3% 4%;
+  background-color: #696969;
+  line-height: 180%;
+  padding-left: 0.5%;
+  padding-right: 0.5%;
 }
 
 
 .Right > .Lista{
-  line-height: 200%;
+  margin-top: 2%;
+  margin-bottom: 1%;
 }
 
 .Right > .Lista > .valores{
-  margin:1%;
-  width: 200%;
-  display:flex;
+  display: inline-flex;
+  list-style-type: none;
+  margin: 1% 0% 0% 15%;
 }
 
 .Right > .Lista > .valores > .numero{
-  color:white;
+  color: yellow;
   background-color: #696969;
-
-  width: 39.51%;
-  margin-left: 1vh;
-  text-align: center;
+  line-height: 100%;
+  margin: 0%;
+  width: 10vw;
 }
 
 /* =========================================== */

@@ -20,7 +20,7 @@
 /* =========================================== */
 header {
   background: var(--color_DarkGray);
-  height: 50px;
+  height: 6vh;
   display: flex; 
 }
 
@@ -38,15 +38,13 @@ header h1{
 /* =========================================== */
 main {
   background: var(--color_bgGray);
-  padding: 15px;
   display: flex;
   justify-content: space-around;
-  height: 85vh;
+  height: 86vh;
 }
 
 main > div {
   background-color: transparent;
-  height: 85vh;
   width: 45vw;
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
