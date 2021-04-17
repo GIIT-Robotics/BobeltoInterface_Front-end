@@ -10,38 +10,96 @@
 
 <body>
     <header>
-        <div class="titulo"> 
-            <h1>BRAZO ROBÓTICO</h1>
+        <!-- -------------------------- -->
+        <!-- GIROSCOPIO - VISTA SUPERIOR -->
+        <!-- -------------------------- -->
+        
+        <div class="giroscopio_superior">
+            <h4>Giroscopio - Superior</h4>
+
+            <div class="vista_superior">
+                <img src="../img/Giroscopio_superior.png" width="190"/>
+            </div>
         </div>
+        
+        <!-- -------------------------- -->
+        <!-- MOTORES -->
+        <!-- -------------------------- -->
+        <div class="motores_estado">
+            <h4>Motores</h4>
 
-        <!-- -------------------------- -->
-        <!-- ESTADO DE BOBELTO -->
-        <!-- -------------------------- -->
-        <ul>
-            <h4>Estado</h4>
-            <div class="sensores">
-                <div class="estado_bobelto">
-                    Opción 1:
-                    <div id="chelo" class="numero">
-                        000000
+            <div class="motores_L_R">
+            <!-- -------------------------- -->
+            <!-- MOTORES - IZQUIERDA-->
+            <!-- -------------------------- -->
+                <div class="motores_izquierda">
+                    <h5>Izquierda</h5>
+                    <div class="sensores_motores">
+                        <div class="estado_motor">
+                            L-1:
+                            <div id="motor_L_1" class="numero">
+                                00.00%
+                            </div>
+                        </div>
+
+                        <div class="estado_motor">
+                            L-2:
+                            <div id="motor_L_2" class="numero">
+                                00.00%
+                            </div>
+                        </div>
+
+                        <div class="estado_motor">
+                            L-3:
+                            <div id="motor_L_3" class="numero">
+                                00.00%
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="estado_bobelto">
-                    Opción 2:
-                    <div class="numero">
-                        000000
-                    </div>
-                </div>
+                <!-- -------------------------- -->
+                <!-- MOTORES - DERECHA-->
+                <!-- -------------------------- -->
+                <div class="motores_derecha">
+                    <h5>Derecha</h5>
+                    <div class="sensores_motores">
+                        <div class="estado_motor">
+                            R-1:
+                            <div id="motor_R_1" class="numero">
+                                00.00%
+                            </div>
+                        </div>
 
-                <div class="estado_bobelto">
-                    Opción 3:
-                    <div class="numero">
-                        000000
+                        <div class="estado_motor">
+                            R-2:
+                            <div id="motor_R_2" class="numero">
+                                00.00%
+                            </div>
+                        </div>
+
+                        <div class="estado_motor">
+                            R-3:
+                            <div id="motor_R_3" class="numero">
+                                00.00%
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </ul>
+
+        </div>
+
+        <!-- -------------------------- -->
+        <!-- GIROSCOPIO - VISTA LATERAL -->
+        <!-- -------------------------- -->
+        <div class="giroscopio_lateral">
+            <h4>Giroscopio - Lateral</h4>
+
+            <div class="vista_lateral">
+                <img src="../img/Giroscopio_lateral.png" width="150"/>
+            </div>
+        </div>
     </header>
 
     <main>
@@ -53,7 +111,7 @@
 
             <h4>Izquierdo</h4>
                 <div class="imagen">
-                    <img src="../img/brazo_izquierdo.png" width="250"/>
+                    <img src="../img/brazo_izquierdo.png" width="340"/>
                 </div>
                 <div class="lista_coord">
                     <div class="coordenada_horizontal">
@@ -64,7 +122,7 @@
                     </div>
                 </div>
 
-            <h4>Brazo</h4>
+            <h5>Brazo</h5>
                 <div class="Lista">
                     <div class="valores">
                         Valor 1:
@@ -87,10 +145,10 @@
                         </div>
                     </div>
                 </div>
-            <h4>Gripper</h4>
+            <h5>Gripper</h5>
                 <div class="slider">
                     <div class="slider-texto">
-                        <label for="rango-left">Presión</label>
+                        <label for="rango-left">Presión %:</label>
                         <input type="text" name="rango-left-texto" value="50" class="rango-left-texto"
                             id="rango-left-texto" onchange="updateTextInput(this.value, 'rango-left');">
                     </div>
@@ -103,10 +161,12 @@
         <!-- -------------------------- -->
         <!-- CAMARA -->
         <!-- -------------------------- -->
-        </div>
     
         <div class="Middle">
             <h4>Cámara</h4>
+            <video controls loop autoplay muted width="100%" height="92%">
+                <source src="../video/camera_video.mp4" />
+            </video>
         </div>
 
 
@@ -116,18 +176,18 @@
         <div class="Right">            
             <h4>Derecho</h4>
                 <div class="imagen">
-                    <img src="../img/brazo_derecho.png" width="250"/>
+                    <img src="../img/brazo_derecho.png" width="340"/>
                 </div>
                 <div class="lista_coord">
                     <div class="coordenada_horizontal">
-                        <h5>0</h5>
+                        <h5>x</h5>
                     </div>
                     <div class="coordenada_vertical">
-                        <h5>0</h5>
+                        <h5>y</h5>
                     </div>
                 </div>
 
-            <h4>Brazo</h4>
+            <h5>Brazo</h5>
                 <div class="Lista">
                     <div class="valores">
                         Valor 1:
@@ -150,10 +210,10 @@
                         </div>
                     </div>
                 </div>
-            <h4>Gripper</h4>
+            <h5>Gripper</h5>
                 <div class="slider">
                     <div class="slider-texto">
-                        <label for="rango-right">Presión</label>
+                        <label for="rango-right">Presión %:</label>
                         <input type="text" name="rango-right-texto" value="50" class="rango-right-texto"
                             id="rango-right-texto" onchange="updateTextInput(this.value, 'rango-right');">
                     </div>

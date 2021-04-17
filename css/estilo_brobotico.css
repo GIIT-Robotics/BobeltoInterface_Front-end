@@ -26,83 +26,111 @@ body {
 /* HEADER */
 /* =========================================== */
 header {
-  height: 20vh;
+  height: 25vh;
   display: flex;
-
   background-color: var(--color_bgGray);
 }
 
-.titulo {
-  width: 75%;
-  margin: 0.5%;
+/* =========================================== */
+/* GIROSCOPIO -  VISTA SUPERIOR*/
+/* =========================================== */
+.giroscopio_superior {
   text-align: center;
-  line-height: 1000%;
-
-  border-radius: 10px;
-
-  background-color: var(--color_bgGray);
-  border: solid 1px var(--color_lightGray);
-  
-  /*Antes:
-  width: 100%;
-  margin: 0.5% 0% 0.5% 0%;
-  background-color: #696969;
-  color: white;
-  text-align: center;
-  line-height: 1000%;
-  border: solid 1px #696969;
-  */
-}
-
-ul {
   width: 25%;
-  margin: 0.5% 0.5% 0.5% 0%;
-
+  margin:0.5%;
   border-radius: 10px;
-
-  background-color: var(--color_bgGray);
   border: solid 1px var(--color_lightGray);
 }
 
-ul h4 {
-  height: 20%;
+.giroscopio_superior>h4 {
   margin: 1%;
+  line-height: 150%;
+  font-size: 25px;
+  border-radius: 5px;
+  background-color: var(--color_lightGray);
+}
+
+.vista_superior{
+  margin: 2%;
+}
+
+/* =========================================== */
+/* MOTORES */
+/* =========================================== */
+.motores_estado{
+  width: 50%;
+  margin: 0.5% 0% 0.5% 0%;
+  border-radius: 10px;
+  border: solid 1px var(--color_lightGray);
+}
+
+.motores_estado > h4 {
+  margin: 0.5%;
   text-align: center;
   line-height: 150%;
   font-size: 25px;
-
   border-radius: 5px;
-
   background-color: var(--color_lightGray);
 }
 
-.sensores {
-  margin-left: 2%;
-  line-height: 150%;
-
-  /*Antes:
-  list-style-type: circle;
-  font-size: 15px;
-  margin: 2% 2% 1% 2%;
-  height: 60%;
-  line-height: 90%;
-  */
+.motores_L_R{
+  display:flex;
 }
 
-.sensores>.estado_bobelto {
-  display: inline-flex;
-  margin-top: 1%;
+/* =========================================== */
+/* MOTORES - IZQUIERDA */
+/* =========================================== */
+
+.motores_izquierda,
+.motores_derecha  {
+  width: 50%;
+  margin: 0.5%;
+  border-radius: 5px;
 }
 
-header>ul>.sensores>.estado_bobelto>.numero {
-  color: yellow;
-  margin-bottom: 3.75%;
-  width: 19.2vw;
+.motores_izquierda > h5,
+.motores_derecha > h5{
   text-align: center;
+  font-size:22px;
+  margin:2%;
+}
 
+.sensores_motores {
+  margin: 1%;
+  line-height: 135%;
+}
+
+.sensores_motores > .estado_motor{
+display: flex;
+}
+
+.estado_motor>.numero {
+  color: yellow;
+  text-align: center;
   border-radius: 15px;
-
   background-color: var(--color_lightGray);
+}
+/* =========================================== */
+/* GIROSCOPIO - VISTA LATERAL */
+/* =========================================== */
+.giroscopio_lateral {
+  text-align: center;
+  width: 25%;
+  margin:0.5%;
+  border-radius: 10px;
+  border: solid 1px var(--color_lightGray);
+}
+
+.giroscopio_lateral>h4 {
+  margin: 1%;
+  line-height: 150%;
+  font-size: 25px;
+  border-radius: 5px;
+  background-color: var(--color_lightGray);
+}
+
+.vista_lateral{
+  margin: 2%;
 }
 
 /* =========================================== */
@@ -110,8 +138,7 @@ header>ul>.sensores>.estado_bobelto>.numero {
 /* =========================================== */
 main {
   display: flex;
-  height: 72vh;
-
+  height: 67vh;
   background-color: var(--color_bgGray);
 }
 
@@ -155,9 +182,7 @@ main {
   width: 35%;
   text-align: center;
   font-size: 18px;
-
   border-radius: 15px;
-
   background-color: var(--color_lightGray);
   border: none;
 }
@@ -169,9 +194,7 @@ main {
   text-align: center;
   width: 25%;
   margin: 0% 0.5% 0% 0.5%;
-
   border-radius: 10px;
-
   border: solid 1px var(--color_lightGray);
 }
 
@@ -180,15 +203,22 @@ main {
   font-size: 25px;
   margin: 1%;
   line-height: 150%;
-
   border-radius: 5px;
-
   background-color: var(--color_lightGray);
+}
+
+.Left > h5,
+.Right > h5{
+  font-size: 25px;
+  margin: 1%;
+  line-height: 150%;
+  border-radius: 20px;
+  border: solid 1px var(--color_lightGray);
 }
 
 .Lista {
   margin-left: 1%;
-  line-height: 150%;
+  line-height: 135%;
 }
 
 /*.Lista>.valores*/
@@ -203,17 +233,8 @@ main {
   margin-bottom: 5%;
   width:83.3%;
   text-align: center;
-
   border-radius: 15px;
-
   background-color: var(--color_lightGray);
-/*color: yellow;
-  background-color: var(--color_lightGray);
-  width: 50%;
-  line-height: 130%;
-  margin: 2% 0% 0% 2%;
-  padding-top: 0%;
-  font-size: 18px;*/
 }
 
 /* =========================================== */
@@ -223,38 +244,15 @@ main {
   text-align: center;
   width: 50%;
   padding:0.3%;
-
   border-radius: 10px;
-
   border: solid 1px var(--color_lightGray);
-
-  /*
-  padding-left: 0.5%;
-  padding-right: 0.5%;
-  margin: 0% 0% 0% 0%;
-  text-align: center;
-  width: 50%;
-  border: solid 1px var(--color_lightGray);
-  color: white;
-  */
 }
 
 .Middle>h4 {
   font-size: 25px;
   line-height: 150%;
-
   border-radius: 5px;
-
   background-color:var(--color_lightGray);
-
-  /*Antes:
-  font-size: 20px;
-  margin: 1% 4% 0% 4%;
-  background-color: var(--color_lightGray);
-  line-height: 180%;
-  padding-left: 0.5%;
-  padding-right: 0.5%;
-  */
 }
 
 /* =========================================== */
@@ -264,7 +262,6 @@ footer {
   height: 8vh;
   display: flex;
   align-items: center;
-
   background-color: var(--color_bgGray);
 }
 
@@ -295,13 +292,11 @@ footer {
   font-size: 25px;
   padding: 12px 21px;
   text-decoration:none;
-  
   background-color: var(--color_DarkGray);
 }
 
 .button:hover {
   box-shadow: inset 1px 1px 5px -1px #333;
-
   background-color: var(--color_DarkBlue);
 }
 
