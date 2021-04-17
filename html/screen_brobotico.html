@@ -20,21 +20,21 @@
         <ul>
             <h4>Estado</h4>
             <div class="sensores">
-                <div class="valores2">
+                <div class="estado_bobelto">
                     Opción 1:
                     <div id="chelo" class="numero">
                         000000
                     </div>
                 </div>
 
-                <div class="valores2">
+                <div class="estado_bobelto">
                     Opción 2:
                     <div class="numero">
                         000000
                     </div>
                 </div>
 
-                <div class="valores2">
+                <div class="estado_bobelto">
                     Opción 3:
                     <div class="numero">
                         000000
@@ -57,10 +57,10 @@
                 </div>
                 <div class="lista_coord">
                     <div class="coordenada_horizontal">
-                        <h5>0</h5>
+                        <h5>x</h5>
                     </div>
                     <div class="coordenada_vertical">
-                        <h5>0</h5>
+                        <h5>y</h5>
                     </div>
                 </div>
 
@@ -88,14 +88,14 @@
                     </div>
                 </div>
             <h4>Gripper</h4>
-                <div class="slider-master">
+                <div class="slider">
                     <div class="slider-texto">
-                        <label for="rango-master">Presión</label>
-                        <input type="text" name="rango-master-texto" value="120" class="rango-master-texto"
-                            id="rango-master-texto" onchange="updateTextInput(this.value, 'rango-master');">
+                        <label for="rango-left">Presión</label>
+                        <input type="text" name="rango-left-texto" value="50" class="rango-left-texto"
+                            id="rango-left-texto" onchange="updateTextInput(this.value, 'rango-left');">
                     </div>
-                    <input type="range" min="1" max="100" value="50" class="rango-master" id="rango-master"
-                        onchange="updateTextInput(this.value, 'rango-master-texto');">
+                    <input type="range" min="0" max="100" value="50" class="rango-left" id="rango-left"
+                        onchange="updateTextInput(this.value, 'rango-left-texto');">
                 </div>  
         </div>
 
@@ -151,19 +151,21 @@
                     </div>
                 </div>
             <h4>Gripper</h4>
-                <div class="slider-master">
+                <div class="slider">
                     <div class="slider-texto">
-                        <label for="rango-master">Presión</label>
-                        <input type="text" name="rango-master-texto" value="120" class="rango-master-texto"
-                            id="rango-master-texto" onchange="updateTextInput(this.value, 'rango-master');">
+                        <label for="rango-right">Presión</label>
+                        <input type="text" name="rango-right-texto" value="50" class="rango-right-texto"
+                            id="rango-right-texto" onchange="updateTextInput(this.value, 'rango-right');">
                     </div>
-                    <input type="range" min="1" max="100" value="50" class="rango-master" id="rango-master"
-                        onchange="updateTextInput(this.value, 'rango-master-texto');">
+                    <input type="range" min="0" max="100" value="50" class="rango-right" id="rango-right"
+                        onchange="updateTextInput(this.value, 'rango-right-texto');">
                 </div> 
         </div>
     </main>
 
-
+        <!-- -------------------------- -->
+        <!-- FOOTER -->
+        <!-- -------------------------- -->
     <footer>
         <div class="f-nombre">
             <h1>BOBELTO HMI</h1>
