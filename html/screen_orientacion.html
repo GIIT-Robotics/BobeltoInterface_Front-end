@@ -11,35 +11,73 @@
 
 <body>
 
+    <!-- -------------------------- -->
+    <!-- HEADER -->
+    <!-- -------------------------- -->
     <header>
         <h1>HMI Bobelto - Orientación</h1>
     </header>
 
+    <!-- -------------------------- -->
+    <!-- MAIN -->
+    <!-- -------------------------- -->
     <main>
-        <div>
-            <div class="radar">
-                <div class="pointer"></div>
-                <div class="shadow"></div>
+        <div class="Left">
+            <div class="camara">
+                <h4> Cámara </h4>
+                <video controls loop autoplay muted width="98%" height="92%">
+                    <source src="../video/camera_video.mp4" />
+                </video>
             </div>
-            <div id="segmento">
-                General
-                <p>Valor 1 : XXXXXXXXXXXX</p>
-                <p>Valor 2 : XXXXXXXXXXXX</p>
-                <p>Valor 3 : XXXXXXXXXXXX</p>
+
+            <div class="detection">
+                <h4> RADAR </h4>
+                <div class="radar">
+                    <div class="pointer"></div>
+                    <div class="shadow"></div>
+                </div>
             </div>
         </div>
-        <div>
-            <div id="segmento">
-                Vista lateral
-                <p>imagen lateral de Bobelto </p>
+
+        <div class="Right">
+            <div class="giroscopio_lateral">
+                <h4>Giroscopio - Lateral</h4>
+                <div class="vista_lateral">
+                    <img src="../img/Giroscopio_lateral.png"/>
+                </div>
+                <div class="sensores_motores">
+                    <div class="estado_motor">
+                        L-1:
+                        <div id="motor_L_1" class="numero">
+                            00.00%
+                        </div>
+                    </div>
+                    <div class="estado_motor">
+                        L-2:
+                        <div id="motor_L_2" class="numero">
+                            00.00%
+                        </div>
+                    </div>
+                    <div class="estado_motor">
+                        L-3:
+                        <div id="motor_L_3" class="numero">
+                            00.00%
+                        </div>
+                    </div>
             </div>
-            <div id="segmento">
-                Vista superior
-                <p>imagen superior de Bobelto</p>
+            
+            <div class="giroscopio_superior">
+                <h4>Giroscopio - Superior</h4>
+                <div class="vista_superior">
+                    <img src="../img/Giroscopio_superior.png"/>
+                </div>
             </div>
         </div>
     </main>
 
+    <!-- -------------------------- -->
+    <!-- FOOTER -->
+    <!-- -------------------------- -->
     <footer>
         <div class="f-nombre">
             <h1>BOBELTO HMI</h1>
