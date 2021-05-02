@@ -24,7 +24,11 @@
                 fetch('sensores.php').then(function(response){
                     return response.json();
                 }).then(function (data){
-                    textViewCount.textContent = data.viewCount;
+                    //console.log(data);
+                    var orientacion = data.orientacion.orientacion_x;
+                    console.log(orientacion);
+                    //textViewCount.textContent = data.orientacion_x;
+                    textViewCount.textContent = 0;
                 }).catch(function(error){
                     console.log(error);
                 });
