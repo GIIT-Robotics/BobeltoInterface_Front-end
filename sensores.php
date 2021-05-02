@@ -16,6 +16,11 @@ $magnetometro_z = "mz";
 
 $presion = "presion";
 
+
+
+
+
+
 header('Content-Type: application/json');
 
 $data = [
