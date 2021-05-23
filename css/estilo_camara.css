@@ -100,10 +100,6 @@ main {
   gap: 10px;
 }
 
-.giroscopio > div {
-  
-}
-
 .giroscopio-visual {
   flex: 1;  
   text-align: center;
