@@ -33,7 +33,7 @@ header {
   flex: 1;
   text-align: center;
   /* padding: 25px; */
-  color: #A2E6FF;
+  color: var(--color_lightGray);
 }
 
 /* =========================================== */
@@ -98,10 +98,6 @@ main {
   display: flex;
   flex-direction: column;
   gap: 10px;
-}
-
-.giroscopio > div {
-  
 }
 
 .giroscopio-visual {
