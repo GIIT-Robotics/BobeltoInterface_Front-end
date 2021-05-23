@@ -6,10 +6,11 @@
   --color_DarkBlue: #323FB5;
   --color_DarkGray: #121212;
   --color_bgGray: #202020;
+  --color_lightGray: #696969;
 }
 
 /* =========================================== */
-/* GENERAL*/
+/* GENERAL */
 /* =========================================== */
 * {
   margin: 0;
@@ -18,31 +19,28 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* =========================================== */
 /* HEADER */
+/* =========================================== */
 header {
-  background-color: #000000;
+  background-color: var(--color_DarkGray);
   display: flex;
-  height: 10vh;
-}
-
-.header-logo {
-  height: 100%;
-}
-
-.header-logo > img{
-  height: 100%;
+  align-items: center;
+  height: 6vh;
 }
 
 .header-titulo {
   flex: 1;
   text-align: center;
-  padding: 25px;
+  /* padding: 25px; */
   color: #A2E6FF;
 }
 
+/* =========================================== */
 /* MAIN */
+/* =========================================== */
 main {
-  background-color: #00455a;
+  background: var(--color_bgGray);
   padding: 15px;
   display: flex;
   justify-content: space-around;
@@ -52,24 +50,36 @@ main {
 
 .giroscopio,
 .camara {
-  background-color: #c4c4c4;
+  /* background-color: #c4c4c4; */
+  text-align: center;
+  border-radius: 10px;
+  border: solid 1px var(--color_lightGray);
 }
 
 .camara {
   flex: 2;
   padding: 10px;
+  align-content: space-around;
+}
+
+.camara > div > h3 {
+  font-size: 25px;
+  border-radius: 5px;
+  background-color: var(--color_lightGray);
 }
 
 .camara > div {
-  background-color: #A2E6FF;
   width: 100%;
   height: 100%;
+  /* font-size: 25px;
+  border-radius: 5px;
+  background-color: var(--color_lightGray); */
 }
-  .videowrapper{
-    position:relative;
-    padding-bottom: 56.25%;
-    padding-top: 25px;
-    height: 0px;
+
+.videowrapper{
+  position:relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
 
 }
 
@@ -91,19 +101,34 @@ main {
 }
 
 .giroscopio > div {
-  background-color: #A2E6FF;
+  
 }
 
 .giroscopio-visual {
-  flex: 1;
+  flex: 1;  
+  text-align: center;
+  border-radius: 10px;
+  border: solid 1px var(--color_lightGray);
+}
+
+.giroscopio-visual > h3 {
+  font-size: 25px;
+  border-radius: 5px;
+  background-color: var(--color_lightGray);
 }
 
 .giroscopio-control {
-  flex: 1;
+  flex: 1;  
+  text-align: center;
+  border-radius: 10px;
+  border: solid 1px var(--color_lightGray);
 }
 
 .giroscopio-control-titulo {
-  text-align: center;
+  font-size: 25px;
+  border-radius: 5px;
+  background-color: var(--color_lightGray);
+  margin-bottom: 75px;
 }
 
 .slider-master {
