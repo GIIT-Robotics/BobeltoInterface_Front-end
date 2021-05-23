@@ -6,7 +6,7 @@
     --radar_Size: 350px;
     --color_DarkBlue: #323FB5;
     --color_DarkGray: #121212;
-    --color_bgGray: #202020;
+    --color_bgGray: #000C4B;
 }
 
 /* =========================================== */
@@ -104,7 +104,7 @@ main {
     padding-left: 0.5%;
     padding-right: 0.5%;
     margin: 0% 0.5% 0% 0.5%;
-    background-color: black;
+    background-color: #182878;
     border: solid 1px #696969;
     color: white;
     line-height: 140%;
