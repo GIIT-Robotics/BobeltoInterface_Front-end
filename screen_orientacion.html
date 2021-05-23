@@ -25,9 +25,10 @@
         <div class="Left">
             <div class="camara">
                 <h4> Cámara </h4>
-                <video controls loop autoplay muted width="98%" height="92%">
-                    <source src="./video/camera_video.mp4" />
-                </video>
+                <div class="videowrapper">
+                    <iframe src="http://192.168.43.1:8080/browserfs.html" frameborder="0"
+                    allowfullscreen></iframe>
+                </div>
             </div>
 
             <div class="detection">
@@ -43,33 +44,28 @@
             <div class="giroscopio_lateral">
                 <h4>Giroscopio - Lateral</h4>
                 <div class="vista_lateral">
-                    <img src="./img/Giroscopio_lateral.png"/>
+                    <div class="image">
+                        <img src="./img/Giroscopio_lateral.png"/>
+                    </div>
+                    <div class="sensores_motores">
+                        <p>L - 1 : <span id="motor_L_1">asd</span> %</p> 
+                        <p>L - 2 : <span id="motor_L_2">asd</span> %</p> 
+                        <p>L - 3 : <span id="motor_L_3">asd</span> %</p> 
+                    </div>
                 </div>
-                <div class="sensores_motores">
-                    <div class="estado_motor">
-                        L-1:
-                        <div id="motor_L_1" class="numero">
-                            00.00%
-                        </div>
-                    </div>
-                    <div class="estado_motor">
-                        L-2:
-                        <div id="motor_L_2" class="numero">
-                            00.00%
-                        </div>
-                    </div>
-                    <div class="estado_motor">
-                        L-3:
-                        <div id="motor_L_3" class="numero">
-                            00.00%
-                        </div>
-                    </div>
             </div>
             
             <div class="giroscopio_superior">
                 <h4>Giroscopio - Superior</h4>
                 <div class="vista_superior">
-                    <img src="./img/Giroscopio_superior.png"/>
+                    <div class="image">
+                        <img src="./img/Giroscopio_superior.png"/>
+                    </div>
+                    <div class="sensores_motores">
+                        <p>L - 1 : <span id="motor_L_1">asd</span> %</p> 
+                        <p>L - 2 : <span id="motor_L_2">asd</span> %</p> 
+                        <p>L - 3 : <span id="motor_L_3">asd</span> %</p> 
+                    </div>
                 </div>
             </div>
         </div>
