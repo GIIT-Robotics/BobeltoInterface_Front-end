@@ -67,6 +67,7 @@ main {
 /* ------------------------------------------- */
 /* CÁMARA*/
 /* ------------------------------------------- */
+<<<<<<< HEAD
 .camara {
   text-align: center;
   padding: 2px;
@@ -81,8 +82,40 @@ main {
   font-size: 25px;
   border-radius: 5px;
   background-color: var(--color_lightGray);
+=======
+  .camara {
+    text-align: center;
+    padding:0.3%;
+    border-radius: 10px;
+    border: solid 1px var(--color_lightGray);
+    margin:0.5%;
+  }
+  
+  .camara>h4 {
+    margin: 1%;
+    line-height: 150%;
+    font-size: 25px;
+    border-radius: 5px;
+    background-color: var(--color_lightGray);
+  }
+  .videowrapper{
+    position:relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0px;
+
+>>>>>>> 7733cb4eb6678d8af68cbcdab7cda7ba5ace1269
 }
 
+.videowrapper iframe{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 100%;
+    width: 100%;
+}
 /* ------------------------------------------- */
 /* RADAR */
 /* ------------------------------------------- */
