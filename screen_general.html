@@ -12,31 +12,12 @@
         <div class="titulo"> 
             <h1>BOBELTO HMI</h1>
         </div>
-        <ul>
+        <div class="sensores">
             <h4>Sensor</h4>
-            <div class="sensores">
-                <div class="valores2">
-                    <li>Opción 1:</li>
-                    <div id="chelo" class="numero">
-                        000000
-                    </div>
-                </div>
-
-                <div class="valores2">
-                    <li>Opción 2:</li>
-                    <div class="numero">
-                        000000
-                    </div>
-                </div>
-
-                <div class="valores2">
-                    <li>Opción 3:</li>
-                    <div class="numero">
-                        000000
-                    </div>
-                </div>
-            </div>
-        </ul>
+            <li>Opción 1: <span class="numero">0000</span></li>
+            <li>Opción 2: <span class="numero">0000</span></li>
+            <li>Opción 3: <span class="numero">0000</span></li>
+        </div>
     </header>
 
     <main>
@@ -89,7 +70,7 @@
         <div class="Middle">
             <h4>Cámara</h4>
             <div class="videowrapper">
-                <iframe src="http://192.168.43.1:8080/browserfs.html" frameborder="0"
+                <iframe src="http://192.168.1.9:8080/browserfs.html" frameborder="0"
                 allowfullscreen></iframe>
             </div>
         </div>
@@ -100,7 +81,7 @@
                 <div class="valores2">
                     <li>X:</li>
                     <div class="numero" id="ori">
-                        
+                        000000
                     </div>
                 </div>
 
@@ -174,6 +155,5 @@
 
     
 </body>
-<script src="./js/logica.js"></script>
 <script src="./js/general.js"></script>
 </html>

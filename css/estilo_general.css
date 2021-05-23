@@ -3,10 +3,11 @@
 /* GLOBAL VARIABLES*/
 /* =========================================== */
 :root {
-    --radar_Size: 350px;
+    --radar_Size: 335px;
     --color_DarkBlue: #323FB5;
     --color_DarkGray: #121212;
-    --color_bgGray: #000C4B;
+    --color_bgGray: #202020;
+    --color_lightGray: #696969;
 }
 
 /* =========================================== */
@@ -21,7 +22,6 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
-
 }
 
 /* =========================================== */
@@ -29,60 +29,54 @@ body {
 /* =========================================== */
 header{
     height: 20vh;
-    padding-right: 0.5%;
-    padding-left: 0.5%;
     display: flex;
     background-color: var(--color_bgGray);
 }
 
 .titulo{
-    width: 100%;
+    width: 75%;
     margin: 10px;
-    background-color: #696969;
+    background-color: var(--color_lightGray);
     color: white;
     text-align: center;
     line-height: 600%;
-    border: solid 1px #696969;
-}
-
-ul{
-    width: 25%;
-    background-color:black;
-    margin: 0.5% 0% 0.5% 0.5%;
-    border: solid 1px #696969;
-}
-
-ul h4{
-    background-color:#696969;
-    color: white;
-    height: 25%;
-    margin: 3% 4% 1% 4%;
-    text-align: center;
-    line-height: 120%;
-    font-size: 20px;
+    border-radius: 10px;
 }
 
 .sensores{
+    width: 25%;
+    margin: 10px;
+    border-radius: 10px;
+    border: solid 1px var(--color_lightGray);
+    align-items: center;
+    text-align: center;
+}
+
+.sensores > h4{
+    background-color:var(--color_lightGray);
+    border-radius: 10px;
+    margin: 5px;
+    color: white;
+    line-height: 150%;
+    font-size: 25px;
+}
+
+.sensores > li{
     list-style-type: circle;
     font-size: 15px;
-    margin: 10px;
-    height: 60%;
-    line-height: 90%;
-    background-color: black;
-}
-
-.sensores>.valores2 {
-    display: inline-flex;
-    margin: 1% 0% 0% 12%;
+    background-color: var(--color_bgGray);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
+    line-height : 30px;
 }
 
-header>ul>.sensores>.valores2>.numero {
+.numero {
     color: yellow;
-    background-color: #696969;
+    background-color: var(--color_lightGray);
+    border-radius: 15px;
     line-height: 100%;
-    margin: 1% -15% 1% 10%;
-    width: 8vw;
+    padding: 2px 20px;
+    margin: 10px;
     text-align: center;
 }
 
@@ -93,28 +87,29 @@ main {
     display: flex;
     height: 72vh;
     background-color: var(--color_bgGray);
+    text-align: center;
 }
 
 /* =========================================== */
 /* LEFT */
 /* =========================================== */
 .Left {
-    text-align: center;
     width: 25%;
-    padding-left: 0.5%;
-    padding-right: 0.5%;
-    margin: 0% 0.5% 0% 0.5%;
-    background-color: #182878;
-    border: solid 1px #696969;
+    padding: 5px;
+    margin: 10px;
+    background-color: var(--color_bgGray);
+    border: solid 1px var(--color_lightGray);
     color: white;
-    line-height: 140%;
+    border-radius: 15px;
 }
 
 .Left > h4{
-    font-size: 20px;
-    margin:2% 4% 0% 4%;
-    background-color: #696969;
-    line-height: 180%;
+    background-color:var(--color_lightGray);
+    border-radius: 10px;
+    margin: 5px;
+    color: white;
+    line-height: 150%;
+    font-size: 25px;
 }
 
 .imagen{
@@ -123,19 +118,19 @@ main {
 
 .lista_coord{
     color: yellow;
-    background-color:black;
+    background-color: var(--color_bgGray);
     display: inline-flex;
     font-size: 25px;
 
 }
 .coordenada1{
     text-align: left;
-    background-color: black;
+    background-color: var(--color_bgGray);
     margin-right: 30vh;
 }
 
 .coordenada2{
-    background-color:black;
+    background-color: var(--color_bgGray);
     text-align: right;
 }
 
@@ -162,47 +157,46 @@ main {
 /* MIDDLE */
 /* =========================================== */
 .Middle{
-    padding-left: 0.5%;
-    padding-right: 0.5%;
-    margin: 0% 0.5% 0% 0%;
+    padding: 5px;
+    margin: 10px;
     text-align: center;
-    width: 84%;
-    background-color: black;
+    width: 50%;
+    background-color: var(--color_bgGray);
     border: solid 1px #696969;
+    border-radius: 15px;
     color: white;
 }
 
 .Middle > h4{
-    font-size: 20px;
-    margin:1% 4% 0% 4%;
-    background-color: #696969;
-    line-height: 180%;
-    padding-left: 0.5%;
-    padding-right: 0.5%;
+    background-color:var(--color_lightGray);
+    border-radius: 10px;
+    margin: 5px;
+    color: white;
+    line-height: 150%;
+    font-size: 25px;
 }
 
 /* =========================================== */
 /* RIGHT */
 /* =========================================== */
 .Rigth{
-    padding-left: 0.5%;
-    padding-right: 0.5%;
-    margin: 0% 0.5% 0% 0%;
+    padding: 5px;
+    margin: 10px;
     text-align: center;
-    width: 27.2%;
-    background-color: black;
-    border: solid 1px #696969;
+    width: 25%;
+    background-color: var(--color_bgGray);
+    border: solid 1px var(--color_lightGray);
     color: white;
-    
+    border-radius: 15px;
 }
 
 .Rigth > h4{
-    font-size: 20px;
-    margin:4% 4% 3% 4%;
-    background-color: #696969;
-    line-height: 180%;
-    padding-left: 0.5%;
-    padding-right: 0.5%;
+    background-color:var(--color_lightGray);
+    border-radius: 10px;
+    margin: 5px;
+    color: white;
+    line-height: 150%;
+    font-size: 25px;
 }
 
 .Rigth > .viñetas{
