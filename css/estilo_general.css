@@ -292,9 +292,9 @@ footer{
     background-color: var(--color_DarkBlue);
 }
 
-.button:active {
-    position: relative;
-    /* top: 1px; */
+.button:focus {
+    box-shadow: inset 1px 1px 5px -1px #333;
+    background-color: var(--color_DarkBlue);
 }
 
 /* ------------------------------------------- */
