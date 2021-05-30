@@ -146,15 +146,11 @@
                     </div>
                 </div>
             <h5>Gripper</h5>
-                <div class="slider">
-                    <div class="slider-texto">
-                        <label for="rango-left">Presión %:</label>
-                        <input type="text" name="rango-left-texto" value="50" class="rango-left-texto"
-                            id="rango-left-texto" onchange="updateTextInput(this.value, 'rango-left');">
-                    </div>
-                    <input type="range" min="0" max="100" value="50" class="rango-left" id="rango-left"
-                        onchange="updateTextInput(this.value, 'rango-left-texto');">
-                </div>  
+                <div class="slider-master">
+                    <p> Presión : <span id="presion1"></span> %</p>
+                    <input type="range" min="1" max="100" value="50" class="rango-master" id="rango-presion1"
+                        onchange="updateTextInput(this.value, 'rango-master-texto');">
+                </div>
         </div>
 
         
@@ -212,15 +208,11 @@
                     </div>
                 </div>
             <h5>Gripper</h5>
-                <div class="slider">
-                    <div class="slider-texto">
-                        <label for="rango-right">Presión %:</label>
-                        <input type="text" name="rango-right-texto" value="50" class="rango-right-texto"
-                            id="rango-right-texto" onchange="updateTextInput(this.value, 'rango-right');">
-                    </div>
-                    <input type="range" min="0" max="100" value="50" class="rango-right" id="rango-right"
-                        onchange="updateTextInput(this.value, 'rango-right-texto');">
-                </div> 
+                <div class="slider-master">
+                    <p> Presión : <span id="presion2"></span></p>
+                    <input type="range" min="1" max="100" value="50" class="rango-master" id="rango-presion2"
+                        onchange="updateTextInput(this.value, 'rango-master-texto');">
+                </div>
         </div>
     </main>
 
@@ -248,5 +240,5 @@
 </body>
 
 <script src="../js/logica4.js"></script>
-
+<script src="../js/general.js"></script>
 </html>
