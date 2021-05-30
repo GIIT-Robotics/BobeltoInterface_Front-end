@@ -33,7 +33,7 @@ header {
   flex: 1;
   text-align: center;
   /* padding: 25px; */
-  color: #A2E6FF;
+  color: var(--color_lightGray);
 }
 
 /* =========================================== */
@@ -44,7 +44,7 @@ main {
   padding: 15px;
   display: flex;
   justify-content: space-around;
-  height: 82vh;
+  height: 86vh;
   gap: 15px;
 }
 
