@@ -33,7 +33,7 @@ header {
   flex: 1;
   text-align: center;
   /* padding: 25px; */
-  color: var(--color_lightGray);
+  color: white;
 }
 
 /* =========================================== */
@@ -66,6 +66,7 @@ main {
   font-size: 25px;
   border-radius: 5px;
   background-color: var(--color_lightGray);
+  color: white;
 }
 
 .camara > div {
@@ -111,6 +112,7 @@ main {
   font-size: 25px;
   border-radius: 5px;
   background-color: var(--color_lightGray);
+  color: white;
 }
 
 .giroscopio-control {
@@ -125,6 +127,7 @@ main {
   border-radius: 5px;
   background-color: var(--color_lightGray);
   margin-bottom: 75px;
+  color: white;
 }
 
 .slider-master {
