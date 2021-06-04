@@ -1,4 +1,4 @@
-# HMI de BOBELTO en html
+# HMI de BOBELTO v1.0
 
 ## Aviso:
 - cada uno tendrá su rama.
