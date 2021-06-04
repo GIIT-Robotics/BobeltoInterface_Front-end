@@ -55,6 +55,12 @@
 </p>
 
 
+### Languages
+
+
+![JavaScript](https://img.shields.io/badge/-JavaScript-000?&logo=JavaScript)
+![HTML](https://img.shields.io/badge/-Html-000?&logo=Html)
+
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
