@@ -2,7 +2,7 @@
 /* GLOBAL VARIABLES*/
 /* =========================================== */
 :root {
-  --radar_Size: 335px;
+  --radar_Size: 300px;
   --color_DarkBlue: #323FB5;
   --color_DarkGray: #121212;
   --color_bgGray: #202020;
@@ -67,38 +67,40 @@ main {
 /* ------------------------------------------- */
 /* CÁMARA*/
 /* ------------------------------------------- */
-  .camara {
-    text-align: center;
-    padding: 2px;
-    border-radius: 10px;
-    border: solid 1px var(--color_lightGray);
-    margin: 10px;
-  }
-  
-  .camara>h4 {
-    margin: 1%;
-    line-height: 150%;
-    font-size: 25px;
-    border-radius: 5px;
-    background-color: var(--color_lightGray);
-  }
-  .videowrapper{
-    position:relative;
-    padding-bottom: 56.25%;
-    padding-top: 25px;
-    height: 0px;
+.camara {
+  text-align: center;
+  padding: 2px;
+  border-radius: 10px;
+  border: solid 1px var(--color_lightGray);
+  margin: 10px;
+  height: 48%;
+}
 
+.camara>h4 {
+  color: white;
+  margin: 1%;
+  line-height: 150%;
+  font-size: 25px;
+  border-radius: 5px;
+  background-color: var(--color_lightGray);
+}
+.videowrapper{
+  position:relative;
+  padding-bottom: 52%;
+  padding-top: 25px;
+  height: 0px;
 }
 
 .videowrapper iframe{
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    height: 100%;
-    width: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 100%;
+  width: 100%;
 }
+
 /* ------------------------------------------- */
 /* RADAR */
 /* ------------------------------------------- */
@@ -108,6 +110,7 @@ main {
   border-radius: 10px;
   border: solid 1px var(--color_lightGray);
   margin: 10px;
+  height: 47%;
 }
 
 .detection > h4 {

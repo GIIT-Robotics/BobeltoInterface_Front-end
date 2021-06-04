@@ -23,17 +23,20 @@
 /* HEADER */
 /* =========================================== */
 header {
-  background-color: var(--color_DarkGray);
+  background: var(--color_DarkGray);
+  height: 6vh;
   display: flex;
   align-items: center;
-  height: 6vh;
+  justify-content: center;
 }
 
-.header-titulo {
-  flex: 1;
+header > h1{
   text-align: center;
-  /* padding: 25px; */
-  color: white;
+  color: white;  
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* =========================================== */

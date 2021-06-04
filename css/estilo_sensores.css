@@ -1,11 +1,13 @@
-
+  
 /* =========================================== */
 /* GLOBAL VARIABLES*/
 /* =========================================== */
-:root{
+:root {
+  --radar_Size: 335px;
   --color_DarkBlue: #323FB5;
   --color_DarkGray: #121212;
   --color_bgGray: #202020;
+  --color_lightGray: #696969;
 }
 
 /* =========================================== */
@@ -17,40 +19,23 @@
 }
 
 header {
-    background: var(--color_DarkGray);
-    height: 6vh;
-  }
+  background: var(--color_DarkGray);
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 header > h1{
-    text-align: center;
-    color: white;  
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: lighter;
-    font-size: xx-large;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-  /* =========================================== */
-  /* CAMARA */
-  /* =========================================== */  
-
-  .videowrapper{
-    position:relative;
-    padding-bottom: 56.25%;
-    padding-top: 25px;
-    height: 0px;
-
+  text-align: center;
+  color: white;  
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  font-size: xx-large;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-.videowrapper iframe{
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    height: 100%;
-    width: 100%;
-}
 /* =========================================== */
 /* MAIN */
 /* =========================================== */
@@ -61,36 +46,76 @@ main {
     height: 86vh;
   }
 
-.rightcol {
-    background-color: transparent;
-    height: 85vh;
-    width: 65vw;
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    font-size: xx-large;
-}
-
+/* =========================================== */
+/* LEFT */
+/* =========================================== */
 .leftcol {
-    background-color: transparent;
-    height: 85vh;
-    width: 30vw;
+    width: 35vw;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     text-align: center;
     font-size: xx-large;
 }
 
-main > div > div {
-    height: 48%;
-    background-color: #C4C4C4;
+/* ------------------------------------------- */
+/* CÁMARA*/
+/* ------------------------------------------- */
+.camara {
+  text-align: center;
+  padding: 2px;
+  border-radius: 10px;
+  border: solid 1px var(--color_lightGray);
+  margin: 10px;
+  height: 48%;
 }
 
-#unorder {
+.camara>h4 {
+  color: white;
+  margin: 1%;
+  line-height: 150%;
+  font-size: 25px;
+  border-radius: 5px;
+  background-color: var(--color_lightGray);
+}
+.videowrapper{
+  position:relative;
+  padding-bottom: 52%;
+  padding-top: 25px;
+  height: 0px;
+}
+
+.videowrapper iframe{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+/* ------------------------------------------- */
+/* UNORDER*/
+/* ------------------------------------------- */
+.left_bot{
+  text-align: center;
+  padding: 2px;
+  border-radius: 10px;
+  border: solid 1px var(--color_lightGray);
+  margin: 10px;
+  height: 48%;
+}
+
+.left_bot>h4 {
+  color: white;
+  margin: 10px;
+  line-height: 150%;
+  font-size: 25px;
+  border-radius: 5px;
+  background-color: var(--color_lightGray);
+}
+.unorder {
   font-size: x-large;
   color: black;
   text-align: left;
@@ -98,25 +123,86 @@ main > div > div {
   padding-left: 25px;
 }
 
-#unorder > li {
-  padding-top: 1.7%;
+.unorder > li {
+  padding-top: 12px;
   font-weight: bold;
-
+  display: flex;
+  flex-direction: row;
 }
+
+.Motor_label{
+  color: white;
+  width: 20%;
+}
+
 .progress-bar {
   display: block;
-  width: 0;
+  width: 75%;
   height: 100%;
   font-size: 12px;
   line-height: 20px;
-  color: #ffffff;
+  color: white;
   text-align: center;
-  background-color: #337ab7;
+  background-color: var(--color_DarkBlue);
   border-top: 10px;
   border-color: #121212;
+  margin-left: 15px;
 }
-element.style {
-  width: 55%;
+
+
+
+/* =========================================== */
+/* RIGHT */
+/* =========================================== */
+.rightcol {
+  width: 65vw;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: xx-large;
+}
+
+/* ------------------------------------------- */
+/* GRAFICA 1 */
+/* ------------------------------------------- */
+.grafica1 {
+  text-align: center;
+  padding: 2px;
+  border-radius: 10px;
+  border: solid 1px var(--color_lightGray);
+  margin: 10px;
+  height: 48%;
+}
+
+.grafica1>h4 {
+  color: white;
+  margin: 1%;
+  line-height: 150%;
+  font-size: 25px;
+  border-radius: 5px;
+  background-color: var(--color_lightGray);
+}
+
+/* ------------------------------------------- */
+/* GRAFICA 2 */
+/* ------------------------------------------- */
+.grafica2 {
+  text-align: center;
+  padding: 2px;
+  border-radius: 10px;
+  border: solid 1px var(--color_lightGray);
+  margin: 10px;
+  height: 48%;
+}
+
+.grafica2>h4 {
+  color: white;
+  margin: 1%;
+  line-height: 150%;
+  font-size: 25px;
+  border-radius: 5px;
+  background-color: var(--color_lightGray);
 }
 
 /* =========================================== */
